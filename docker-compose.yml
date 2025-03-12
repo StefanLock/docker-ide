@@ -4,7 +4,8 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ~/repositories:/home/coder/project
+      - ~/repositories:/home/coder
       - ~/.aws/credentials:/home/coder/.aws/credentials
+      - ~/.ssh:/home/coder/.ssh
     environment:
       PASSWORD: "your_strong_password"
