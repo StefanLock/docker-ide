@@ -10,4 +10,4 @@ services:
       - ~/.ssh:/home/coder/.ssh
     environment:
       PASSWORD: ${VSCODE_PASSWORD}
-      AWS_PROFILE: "sso"
+      AWS_PROFILE: ${AWS_PROFILE}

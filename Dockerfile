@@ -12,6 +12,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv
     && sudo ./aws/install \
     && rm awscliv2.zip
 
+# Adding a sleep as the extension agent sometimes takes a little while to start up and the command below runs to quickly so the extensions are not actually installed.
 RUN sleep 30
 
 RUN code-server --install-extension ms-python.python \
