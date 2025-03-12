@@ -5,6 +5,6 @@ services:
       - "8080:8080"
     volumes:
       - ~/repositories:/home/coder/project
-      - ~/.aws:/home/coder/.aws
+      - ~/.aws/credentials:/home/coder/.aws/credentials
     environment:
       PASSWORD: "your_strong_password"
