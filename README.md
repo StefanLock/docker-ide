@@ -17,7 +17,7 @@ region = eu-west-1
 ```
 To get started you must run __aws sso login__.
 
-__Note:__ The dockerfile sets the profile to _sso_ so make sure you name your profile sso or update the dockerfile.
+__Note:__ The docker-compose.yml sets the profile to _sso_ so make sure you name your profile sso or update the docker-compose.yml.
 
 You also have the option of creating the aws credentials file here: _~/.aws/credentials_ to reflect the following:
 ```

@@ -16,5 +16,3 @@ RUN code-server --install-extension ms-python.python \
     && code-server --install-extension amazonwebservices.aws-toolkit-vscode hashicorp.terraform \
     && code-server --install-extension hashicorp.terraform \
     && code-server --install-extension redhat.vscode-yaml
-
-ENV AWS_PROFILE=sso

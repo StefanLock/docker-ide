@@ -9,3 +9,4 @@ services:
       - ~/.ssh:/home/coder/.ssh
     environment:
       PASSWORD: "your_strong_password"
+      AWS_PROFILE: "sso"
