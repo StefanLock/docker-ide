@@ -6,6 +6,7 @@ services:
     volumes:
       - ~/repositories:/home/coder
       - ~/.aws/config:/home/coder/.aws/config
+      - ~/.aws/credentials:/home/coder/.aws/credentials
       - ~/.ssh:/home/coder/.ssh
     environment:
       PASSWORD: "your_strong_password"

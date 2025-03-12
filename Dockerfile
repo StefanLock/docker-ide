@@ -12,6 +12,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv
     && sudo ./aws/install \
     && rm awscliv2.zip
 
+RUN sleep 30
+
 RUN code-server --install-extension ms-python.python \
     && code-server --install-extension amazonwebservices.aws-toolkit-vscode hashicorp.terraform \
     && code-server --install-extension hashicorp.terraform \
