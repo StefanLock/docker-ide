@@ -1,0 +1,10 @@
+services:
+  code-server:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ~/repositories:/home/coder/project
+      - ~/.aws:/home/coder/.aws
+    environment:
+      PASSWORD: "your_strong_password"
