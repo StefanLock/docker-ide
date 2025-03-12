@@ -4,10 +4,10 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ~/repositories:/home/coder
+      - ${REPOSITORIES_PATH}:/home/coder
       - ~/.aws/config:/home/coder/.aws/config
       - ~/.aws/credentials:/home/coder/.aws/credentials
       - ~/.ssh:/home/coder/.ssh
     environment:
-      PASSWORD: "your_strong_password"
+      PASSWORD: ${VSCODE_PASSWORD}
       AWS_PROFILE: "sso"

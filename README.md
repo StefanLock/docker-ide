@@ -28,6 +28,10 @@ aws_session_token=<token>
 ```
 * Make sure you have your repositories locally here: _~/repositories_
     * Modify the _docker-compose.yml_ if you want to change this location.
+
+### Docker compose variables
+These can be found in the _.env_ file and can be used to define which repository to use, using the local path.
+
 * __Run:__ _docker compose build --no-cache_
 * __Run:__ _docker compose up_
 * __Connect to:__ http://0.0.0.0:8080/
