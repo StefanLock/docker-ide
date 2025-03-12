@@ -11,3 +11,4 @@ services:
     environment:
       PASSWORD: ${VSCODE_PASSWORD}
       AWS_PROFILE: ${AWS_PROFILE}
+      AWS_REGION: ${AWS_REGION}
