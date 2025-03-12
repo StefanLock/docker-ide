@@ -5,7 +5,7 @@ services:
       - "8080:8080"
     volumes:
       - ~/repositories:/home/coder
-      - ~/.aws/credentials:/home/coder/.aws/credentials
+      - ~/.aws/config:/home/coder/.aws/config
       - ~/.ssh:/home/coder/.ssh
     environment:
       PASSWORD: "your_strong_password"
