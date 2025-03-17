@@ -1,5 +1,13 @@
 # Docker-IDE
 
+## Description
+
+This project is a small contained IDE which allows the developer to spin up a new development environment locally with extensions pre-installed.
+
+Currently this mounts locally for secrets and keys but I may look at bringing those things in through the build so I could run this remotely.
+
+This is mostly for fun but feel free to grab it and modify it to your own needs.
+
 ## Prerequisites 
 
 * You will need to configure SSH keys for your desired code repository locally as this container mounts the _~/.ssh_ directory.
